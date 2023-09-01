@@ -9,6 +9,7 @@ Pros:
 Modular code: By designing interfaces that are easy to implement and substitutable, we can write code that is more modular and easier to maintain over time.
 Flexibility: By allowing different structs to implement the same interface, we can write code that is more flexible and adaptable to changing requirements.
 Testability: By using interfaces to define behavior, we can write tests that verify that our code works correctly without having to test every implementation detail.
+
 Cons:
 
 Overhead: In some cases, using interfaces can add overhead to our code. For example, if we have a simple struct with only a few methods, it may be more efficient to use the struct directly rather than defining an interface for it.
