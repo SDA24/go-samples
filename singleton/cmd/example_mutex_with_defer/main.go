@@ -35,5 +35,5 @@ func main() {
 		}
 	}()
 	wg.Wait()
-	fmt.Println("done.")
+	fmt.Println("done, counter is: ", counter)
 }
