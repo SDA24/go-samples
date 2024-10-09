@@ -20,6 +20,6 @@ func send_email(c *fiber.Ctx) error {
 		return c.Status(500).JSON(fiber.Map{"error": err})
 	}
 
-	service.NewEmailService(repository.NewUserDatabaseRepository(&db)).SendRegistrationEmail(uint(body.ID))
+	service.NewEmailService(repository.NewUserDatabaseRepository(db)).SendRegistrationEmail(uint(body.ID))
 	return nil
 }
