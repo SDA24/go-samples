@@ -14,3 +14,7 @@ Advantages:
 1. Simplicity: The linear search algorithm is simple to implement and understand.  
 2. No Sorting Required: It works on both sorted and unsorted lists. There’s no need to pre-sort the list, unlike other search algorithms like binary search.  
 3. Flexibility: Linear search can be applied to any data structure that allows sequential access, such as arrays, linked lists, etc.  
+
+Disadvantages:
+1. Inefficient for Large Lists: Since it examines each element one by one, the performance decreases as the size of the list grows. It’s not efficient for large datasets compared to more advanced algorithms like binary search or hash-based search techniques.
+2. Best-Case Scenario: The best-case time complexity is O(1), where the first element is the match. However, this is rare in practice unless data is structured in a way to favor frequent early matches.
