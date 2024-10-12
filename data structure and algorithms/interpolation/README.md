@@ -10,3 +10,9 @@ Here’s how each term contributes to the formula:
 2. high: This is the ending index of the search range in the array.  
 3. arr[low] and arr[high]: These are the values of the array elements at the low and high indices. These values help determine the range of possible values for the search.  
 4. x: This is the target value we are searching for.
+
+is used to predict the position of the target value x within a sorted array.  
+It leverages the idea that if the array elements are uniformly distributed, the target will likely be closer to the index corresponding to its relative position within the range.  
+By using this calculation, Interpolation Search can "jump" to an estimated location, potentially reducing the number of comparisons needed compared to simply dividing the range in half like Binary Search does.
+
+The main advantage of Interpolation Search over Binary Search is its efficiency with uniformly distributed data, as it can achieve a time complexity close to O(log log n) in the best cases, whereas Binary Search always operates with O(log n) complexity.
