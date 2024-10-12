@@ -3,6 +3,10 @@ Interpolation Search Algorithm:
 
 Key Concept:  
 The formula used to estimate the position is:  
-        $$
             pos = low + ((x - arr[low]) * (high - low))/(arr[high] - arr[low])
-        $$
+
+Here’s how each term contributes to the formula:  
+1. low: This is the starting index of the search range in the array.  
+2. high: This is the ending index of the search range in the array.  
+3. arr[low] and arr[high]: These are the values of the array elements at the low and high indices. These values help determine the range of possible values for the search.  
+4. x: This is the target value we are searching for.
