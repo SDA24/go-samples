@@ -15,5 +15,5 @@ func New_email_service(ie Iemail_service) email_service {
 }
 
 func (e email_service) SendRegistrationEmail(userID int) error {
-	return e.SendRegistrationEmail(userID)
+	return e.send_registration_email.SendRegistrationEmail(uint(userID))
 }
