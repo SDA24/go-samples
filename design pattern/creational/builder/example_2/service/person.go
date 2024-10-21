@@ -30,7 +30,7 @@ func (p person) Person_info_json() []byte {
 	return b
 }
 
-// /////////////////////////////
+////////////////////////////////
 type PersonBuilder struct {
 	person *person // needs to be inited
 }
@@ -39,8 +39,15 @@ func NewPersonBuilder() *PersonBuilder {
 	return &PersonBuilder{&person{}}
 }
 
-func (it *PersonBuilder) Build() *person {
-	return it.person
+func (it *PersonBuilder) Build() person {
+	return person{
+		streetAddress: it.person.streetAddress,
+		postcode:      it.person.postcode,
+		city:          it.person.city,
+		companyName:   it.person.companyName, 
+		position:      it.person.position,
+		annualIncome:  it.person.annualIncome,
+	}
 }
 
 func (it *PersonBuilder) Works() *PersonJobBuilder {
